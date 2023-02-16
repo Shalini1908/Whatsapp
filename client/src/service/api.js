@@ -25,3 +25,13 @@ export const  getUsers=async()=>{
        }
 }
 
+
+export const  setConversation=async(data)=>{
+    try {
+        await  axios.post(`${url}/conversation/add`,data)
+    
+   
+       } catch (err) {
+           console.log("error while calling setConversation api",err.message)
+       }
+}

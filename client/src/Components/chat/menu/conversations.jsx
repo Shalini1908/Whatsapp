@@ -17,7 +17,7 @@ background-color:#e9edef;
 opacity:0.6
 `
 
-const Conversations = () => {
+const Conversations = ({text}) => {
 
 const [users,setUsers]=useState([]);
 const {account} =useContext(AccountContext)
@@ -27,10 +27,11 @@ const {account} =useContext(AccountContext)
         
         const fetchData=async()=>{
           let res=   await getUsers()
-          setUsers(res)
+          const filteredData=res.filter(user=>user.name.toLowerCase().includes(text.toLowerCase()))
+          setUsers(filteredData)
         }
         fetchData()
-    },[])
+    },[text])
   return (
     <Component>
         {
@@ -40,7 +41,7 @@ const {account} =useContext(AccountContext)
 
                  user.sub !==account.sub &&
                  <>
-                <Conversation  user={user}/>
+                < Conversation  user={user}/>
                 <StyledDivider />
                 </>
             ))
