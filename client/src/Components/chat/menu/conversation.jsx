@@ -11,6 +11,7 @@ const Component=styled(Box)`
 
 `
 
+
 const Image=styled('img')({
     width:50,
     height:50,
