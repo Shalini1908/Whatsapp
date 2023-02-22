@@ -10,11 +10,11 @@ const ConversationSchema=new mongoose.Schema({
     type:String
    }},
    {
-timestamps:true
+     timestamps:true
    }
    )
 
 
-const conversation= mongoose.model("conversation",ConversationSchema)
+const Conversation= mongoose.model("conversation",ConversationSchema)
 
-export default conversation
+export default Conversation

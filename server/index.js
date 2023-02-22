@@ -13,7 +13,7 @@ app.use("/",Route)
 
 Connection()
 
-const PORT=3002
+const PORT=3006
 
 app.listen(PORT,()=>{
     console.log(`Server is running on ${PORT}`)
