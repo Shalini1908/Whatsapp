@@ -48,7 +48,7 @@ const Emptychat = () => {
     <>
     <Component>
     <Container>
-   <Image src={emptyChatImage}alt="laptopimg"/>
+   <Image src={emptyChatImage}alt="Empty"/>
    <Title>WhatsApp Web</Title>
    <SubTitle>Now send and receive messages without keeping your phone online.</SubTitle>
    <SubTitle>Use WhatsApp on up to 4 linked devices and 1 phone at the same time.</SubTitle>

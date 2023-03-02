@@ -14,9 +14,6 @@ const Header = styled(AppBar)`
 background-color:#00A884 ;
 height : 125px;
 box-shadow:none;
-
-
-
 `
 
 const LoginHeader = styled(AppBar)`
